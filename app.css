@@ -54,3 +54,110 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* APP Globals */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-smooth: always; /* get nice looking fonts */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+    line-height: 32px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.active {
+    font-weight: 700;
+    color: #f9da85;
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    min-height: 100%;
+}
+
+/* NAV */
+
+nav {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 305px;
+    padding: 16px 32px;
+    background: #000000;
+}
+
+nav h1 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    line-height: 1.2;
+    transition: color .4s ease;
+}
+
+nav h1:hover {
+    color: #f9da85;
+}
+
+nav p {
+    color: #999999;
+    font-style: italic;
+    font-size: 14px;
+}
+
+nav a.author {
+    font-style: italic;
+    color: #999999c4;
+    font-size: 12px;
+}
+
+nav ul {
+    margin-bottom: 48px;
+}
+
+nav ul li {
+    margin-bottom: 16px;
+}
+
+nav ul li a {
+    font-size: 14px;
+    position: relative;
+}
+
+nav ul li a.active:before {
+    background-color: #f9da85;
+}
+
+nav ul li a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -3px;
+    left: 0;
+    background-color: #ffffff;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+nav ul li:last-of-type {
+    margin-bottom: 0;
+}
