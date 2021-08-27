@@ -161,3 +161,91 @@ nav ul li a:hover:before {
 nav ul li:last-of-type {
     margin-bottom: 0;
 }
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+}
+
+main section {
+    display: flex;
+    height: 100%;
+    max-width: 900px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 32px 0;
+}
+
+main section h2 {
+    color: #000000;
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+main section p {
+    color: #383838;
+    margin-bottom: 16px;
+}
+
+main section:not(.home) {
+    display: none;
+}
+
+main section img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: morph 8s ease-in-out 1s;
+    background-blend-mode: multiply;
+    border: 10px solid #f9da85;
+    max-width: 90%;
+    height: auto;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+
+}
+
+/* MAIN: HOME */
+
+main section.home {
+    flex-direction: row;
+    align-items: center;
+}
+
+main section.home .avatar {
+    width: 100%;
+    margin-right: 64px;
+}
+
+main section.home .content ul {
+    display: flex;
+}
+
+main section.home .content ul li {
+    margin-right: 24px;
+}
+
+main section.home .content ul li:last-of-type {
+    margin-right: 0;
+}
+
+main section.home .content ul li svg {
+    width: 17px;
+    width: 17px;
+    transition: fill .4s ease;
+}
+
+main section.home .content ul li svg:hover {
+    fill: #f9da85;
+}
+
+main section.home .content p {
+    margin-bottom: 0%;
+}
