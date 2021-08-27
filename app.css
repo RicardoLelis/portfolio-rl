@@ -250,6 +250,22 @@ main section.home .content p {
     margin-bottom: 0%;
 }
 
+/* MAIN: ABOUT */
+main section.about .large-image {
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+main section.about h2 span {
+    font-style: italic;
+}
+
+main section.about p:last-of-type {
+    margin-bottom: 0;
+}
+
+
 /* MAIN: ANIMATIONS */
 @keyframes morph {
     0% {
