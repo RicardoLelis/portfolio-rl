@@ -265,6 +265,19 @@ main section.about p:last-of-type {
     margin-bottom: 0;
 }
 
+/* MAIN: ABOUT */
+main section.portfolio {
+    flex-direction: column;
+    justify-content: center;
+}
+
+main section.portfolio .photos {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 20px;
+}
+
+
 
 /* MAIN: ANIMATIONS */
 @keyframes morph {
